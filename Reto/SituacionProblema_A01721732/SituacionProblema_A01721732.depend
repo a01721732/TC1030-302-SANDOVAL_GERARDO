@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1653328199 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\main.cpp
+	<iostream>
+	"Video.h"
+	"Episodio.h"
+
+1653328212 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\video.h
+	<iostream>
+
+1653328221 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\episodio.h
+	<iostream>
+
+1653323851 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\episodio.cpp
+	"Episodio.h"
+
