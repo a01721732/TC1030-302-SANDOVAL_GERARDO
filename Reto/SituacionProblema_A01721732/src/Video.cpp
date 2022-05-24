@@ -21,11 +21,26 @@ Video::Video(string _iD, string _titulo, int _duracion, string _genero, double _
 }
 
 //setters (métodos modificadores)
-void Video::setId(string _iD){}
-void Video::setTitulo(string _titulo){}
-void Video::setDuracion(int _duracion){}
-void Video::setGenero(string _genero){}
-void Video::setCalificacionPromedio(double _calificacionPromedio){}
+void Video::setId(string _iD)
+{
+    iD = _iD;
+}
+void Video::setTitulo(string _titulo)
+{
+    titulo = _titulo;
+}
+void Video::setDuracion(int _duracion)
+{
+    duracion = _duracion;
+}
+void Video::setGenero(string _genero)
+{
+    genero = _genero;
+}
+void Video::setCalificacionPromedio(double _calificacionPromedio)
+{
+    calificacionPromedio = _calificacionPromedio;
+}
 
 //getters (métodos de acceso)
 string Video::getId()
