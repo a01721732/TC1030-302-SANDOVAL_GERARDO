@@ -34,8 +34,6 @@ class Video
         int duracion;
         string genero;
         double calificacionPromedio;
-
-    private:
 };
 
 #endif // VIDEO_H

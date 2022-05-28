@@ -67,6 +67,6 @@ double Video::getCalificacionPromedio()
 //otros métodos
 string Video::str()
 {
-    return iD + "," + titulo + "," + to_string(duracion) + "," + genero + "," + to_string(calificacionPromedio);
+    return iD + ", " + titulo + ", " + to_string(duracion) + ", " + genero + ", " + to_string(calificacionPromedio);
 }
 
