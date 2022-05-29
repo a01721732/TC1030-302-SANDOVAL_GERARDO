@@ -4,4 +4,4 @@
 
 # UML - Diagrama de Clases
 
-![](UML.jpg)
+![](UML.JPG)
