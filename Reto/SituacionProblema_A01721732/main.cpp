@@ -71,4 +71,17 @@ int main()
     cout << serie2.str() << endl;
     //Calcular y desplegar la calificación promedio de serie2
     cout << to_string(serie2.calculaCalPromedio()) << endl;
+
+    //------------------------------------
+
+    //Declaración de un arreglo de apuntadores de la clase Video
+    Video *arrPtrVideos[] = {&video1, &video2, &serie2, &pelicula2};
+
+    //Desplegar los ptr, o sea la dirección de memoria
+    cout << "Ptrs del arreglo Video\n";
+    for (int index = 0; index < 4; index++)
+    {
+        cout << &arrPtrVideos[index] << endl;
+        cout << arrPtrVideos[index]->str() << endl;
+    }
 }
