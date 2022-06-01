@@ -5,9 +5,11 @@ using namespace std;
 #include "Episodio.h"
 #include "Pelicula.h"
 #include "Serie.h"
+#include "Peliculas.h"
 
 int main()
 {
+    /*
     //Declaración de un video default
     Video video1;
 
@@ -84,4 +86,9 @@ int main()
         cout << &arrPtrVideos[index] << endl;
         cout << arrPtrVideos[index]->str() << endl;
     }
+    */
+
+    Peliculas prueba;
+
+    prueba.leerArchivo();
 }

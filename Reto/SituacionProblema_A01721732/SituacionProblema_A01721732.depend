@@ -1,12 +1,13 @@
 # depslib dependency file v1.0
-1653800098 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\main.cpp
+1654039973 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\main.cpp
 	<iostream>
 	"Video.h"
 	"Episodio.h"
 	"Pelicula.h"
 	"Serie.h"
+	"Peliculas.h"
 
-1653928262 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\video.h
+1653930832 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\video.h
 	<iostream>
 
 1653799912 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\episodio.h
@@ -29,5 +30,8 @@
 	"Video.h"
 
 1653799912 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\pelicula.cpp
+	"Pelicula.h"
+
+1654048017 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\peliculas.h
 	"Pelicula.h"
 
