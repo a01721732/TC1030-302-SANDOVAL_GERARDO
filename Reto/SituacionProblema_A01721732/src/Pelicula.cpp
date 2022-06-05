@@ -25,5 +25,5 @@ int Pelicula::getOscares()
 //otros métodos
 string Pelicula::str()
 {
-    return iD + ", " + titulo + ", " + to_string(duracion) + ", " + genero + ", " + to_string(calificacionPromedio) + ", " + to_string(oscares);
+    return iD + "," + titulo + "," + to_string(duracion) + "," + genero + "," + to_string(calificacionPromedio) + "," + to_string(oscares);
 }
