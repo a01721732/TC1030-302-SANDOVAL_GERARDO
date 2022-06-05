@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1654391405 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\main.cpp
+1654465396 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\main.cpp
 	<iostream>
 	"Video.h"
 	"Episodio.h"
@@ -29,13 +29,13 @@
 1653799912 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\video.cpp
 	"Video.h"
 
-1653799912 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\pelicula.cpp
+1654465396 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\pelicula.cpp
 	"Pelicula.h"
 
-1654048017 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\peliculas.h
+1654465369 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\peliculas.h
 	"Pelicula.h"
 
-1654392321 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\peliculas.cpp
+1654465396 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\peliculas.cpp
 	"Peliculas.h"
 	<fstream>
 	<sstream>
