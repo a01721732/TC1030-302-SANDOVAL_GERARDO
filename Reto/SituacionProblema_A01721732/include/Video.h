@@ -26,7 +26,7 @@ class Video
         double getCalificacionPromedio();
 
         //otros métodos
-        string str();
+        virtual string str();
 
     protected:
         string iD;
