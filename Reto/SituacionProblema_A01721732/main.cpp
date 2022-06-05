@@ -91,4 +91,8 @@ int main()
     Peliculas prueba;
 
     prueba.leerArchivo();
+
+    prueba.reporteGenero("accion");
+
+    prueba.reporteConCalificacion(8.9);
 }

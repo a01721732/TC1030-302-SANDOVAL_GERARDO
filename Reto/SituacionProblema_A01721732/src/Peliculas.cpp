@@ -18,9 +18,13 @@ Peliculas::Peliculas(Pelicula *_arrPtrPeliculas[MAX_PEL], int _cantidad)
 //Setters (métodos de modificación)
 void Peliculas::setPtrPelicula(Pelicula *_pelicula)
 {
-    arrPtrPeliculas[cantidad] = _pelicula;
-    cantidad = cantidad + 1;
+    if (cantidad < 50)
+    {
+        arrPtrPeliculas[cantidad] = _pelicula;
+        cantidad = cantidad + 1;
+    }
 }
+
 void Peliculas::setCantidadPeliculas(int _cantidad)
 {
     cantidad = _cantidad;
@@ -73,8 +77,8 @@ void Peliculas::leerArchivo()
     // Se lee una línea del archivo y la almacena en line
     while (getline(fin,line))
     {
-        // Se despliega en consola la línea (ESTO SE BORRA)
-        cout << cantidad << line << endl;
+        // Se despliega en consola la línea (SÓLO DESCOMENTAR PARA DEBUGGING)
+        //cout << cantidad << line << endl;
 
         // Esto se usa para separar las palabras split()
         stringstream s(line);
@@ -94,26 +98,24 @@ void Peliculas::leerArchivo()
         // stod - funcion que convierte un string a un double
         setPtrPelicula(new Pelicula(row[0], row[1], stoi(row[2]), row[3], stod(row[4]), stoi(row[5])));
 
-        // Se muestra en consola la separación (ESTO SE BORRA)
-        cout << "iD: " << row[0] << "\n";
-        cout << "Titulo: " << row[1] << "\n";
-        cout << "Duracion: " << row[2] << "\n";
-        cout << "Genero: " << row[3] << "\n";
-        cout << "Calificacion: " << row[4] << "\n";
-        cout << "Oscares: " << row[5] << "\n";
+        // Se muestra en consola la separación (SÓLO DESCOMENTAR PARA DEBUGGING)
+        //cout << "iD: " << row[0] << "\n";
+        //cout << "Titulo: " << row[1] << "\n";
+        //cout << "Duracion: " << row[2] << "\n";
+        //cout << "Genero: " << row[3] << "\n";
+        //cout << "Calificacion: " << row[4] << "\n";
+        //cout << "Oscares: " << row[5] << "\n";
 
-        // Se despliega en consola la película con el método str() de Pelicula (ESTO SE BORRA)
-        //cout << "Dentro del objeto:" << arrPtrPeliculas[cantidad]->str() << endl;
+        // Se despliega en consola la película con el método str() de Pelicula (SÓLO DESCOMENTAR PARA DEBUGGING)
+        //cout << "Dentro del objeto:" << arrPtrPeliculas[cantidad-1]->str() << endl;
 
-        // Se incrementa el atributo cantidad para la siguiente película
-        cantidad = cantidad + 1;
     }
 
     fin.close();
 
     // Se sale del ciclo cuando ya no existen más líneas en el archivo
 
-    // Se despliegan todas las películas leídas (ESTO SE BORRA)
+    // Se despliegan todas las películas leídas (SÓLO DESCOMENTAR PARA DEBUGGING)
     /*
     for (int iR = 0; iR < cantidad; iR++)
     {
@@ -127,7 +129,7 @@ void Peliculas::reporteTodasLasPeliculas()
     double sumaProm = 0;
     for (int indice = 0; indice < cantidad; indice++)
     {
-        arrPtrPeliculas[indice]->str();
+        cout << arrPtrPeliculas[indice]->str() << endl;
         sumaProm = sumaProm + arrPtrPeliculas[indice]->getCalificacionPromedio();
     }
 
@@ -136,22 +138,38 @@ void Peliculas::reporteTodasLasPeliculas()
 
 void Peliculas::reporteConCalificacion(double _calificacion)
 {
+    int countCal = 0;
+
     for (int indexRepCal = 0; indexRepCal < cantidad; indexRepCal++)
     {
         if (arrPtrPeliculas[indexRepCal]->getCalificacionPromedio() == _calificacion)
         {
-            arrPtrPeliculas[indexRepCal]->str();
+            cout << arrPtrPeliculas[indexRepCal]->str() << endl;
+            countCal++;
         }
+    }
+
+    if (countCal == 0)
+    {
+        cout << "No hay películas con esa calificación." << endl;
     }
 }
 
 void Peliculas::reporteGenero(string _genero)
 {
+    int countGen = 0;
+
     for (int indexRepGen = 0; indexRepGen < cantidad; indexRepGen++)
     {
         if (arrPtrPeliculas[indexRepGen]->getGenero() == _genero)
         {
-            arrPtrPeliculas[indexRepGen]->str();
+            cout << arrPtrPeliculas[indexRepGen]->str() << endl;
+            countGen++;
         }
+    }
+
+    if (countGen == 0)
+    {
+        cout << "No hay películas de ese género." << endl;
     }
 }

@@ -35,3 +35,8 @@
 1654048017 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\peliculas.h
 	"Pelicula.h"
 
+1654190026 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\peliculas.cpp
+	"Peliculas.h"
+	<fstream>
+	<sstream>
+
