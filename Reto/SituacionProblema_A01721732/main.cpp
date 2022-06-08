@@ -6,7 +6,9 @@ using namespace std;
 #include "Pelicula.h"
 #include "Serie.h"
 #include "Peliculas.h"
+#include "Series.h"
 
+/*
 int menuPeliculas(){
     int iOpcion;
 
@@ -20,10 +22,13 @@ int menuPeliculas(){
     cin >> iOpcion;
     return iOpcion;
 }
+*/
+
 // ******************************
 //            AVANCE 2
 // *******************************
 int main() {
+    /*
     // se manda llamar al constructor - default
     Peliculas peliculas{};
 
@@ -64,5 +69,11 @@ int main() {
         //3o Actualizar la vcc dentro del ciclo
         iOpcion = menuPeliculas();
     }
+    */
+
+    Series prueba;
+
+    prueba.leerArchivo();
+
     return 0;
 }
