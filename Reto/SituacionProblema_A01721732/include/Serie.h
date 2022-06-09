@@ -10,7 +10,7 @@ class Serie : public Video
     public:
         //constructores
         Serie();
-        Serie(string _iD, string _titulo, int _duracion, string _genero, double _calificacionPromedio);
+        Serie(string _iD, string _titulo, int _duracion, string _genero, double _calificacionPromedio, int _cantidad);
 
         //setters (métodos de modificación)
         void setEpisodio(int _index, Episodio _episodio);

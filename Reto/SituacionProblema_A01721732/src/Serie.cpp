@@ -5,7 +5,7 @@ Serie::Serie()
 {
     cantidad = 0;
 }
-Serie::Serie(string _iD, string _titulo, int _duracion, string _genero, double _calificacionPromedio):Video(_iD, _titulo, _duracion, _genero, _calificacionPromedio)
+Serie::Serie(string _iD, string _titulo, int _duracion, string _genero, double _calificacionPromedio, int cantidad):Video(_iD, _titulo, _duracion, _genero, _calificacionPromedio)
 {
     cantidad = 0;
 }
