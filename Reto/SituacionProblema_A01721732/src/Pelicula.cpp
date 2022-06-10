@@ -27,3 +27,9 @@ string Pelicula::str()
 {
     return iD + "," + titulo + "," + to_string(duracion) + "," + genero + "," + to_string(calificacionPromedio) + "," + to_string(oscares);
 }
+
+ostream & operator<<(ostream &out, const Pelicula &p)
+{
+    out << p.iD << ',' << p.titulo << ',' << p.duracion << ',' << p.genero << ',' << p.calificacionPromedio << ',' << p.oscares << endl;
+    return out;
+}

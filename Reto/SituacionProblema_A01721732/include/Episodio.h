@@ -23,7 +23,7 @@ class Episodio
         int getCalificacion();
 
         //otros métodos
-        string str();
+        string str() const;
 
     private:
         string titulo;

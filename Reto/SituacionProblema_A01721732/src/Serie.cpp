@@ -71,3 +71,16 @@ string Serie::str()
 
     return iD + ", " + titulo + ", " + to_string(duracion) + ", " + genero + ", " + to_string(calificacionPromedio) + "\n" + acum;
 }
+
+ostream &operator<<(ostream &out, const Serie &s)
+{
+    string acum = "\n";
+    for(int index = 0; index < s.cantidad; index++)
+    {
+        acum = acum + to_string(index) + '-' + s.episodios[index].str() + '\n';
+    }
+
+    out << s.iD << ',' << s.titulo << ',' << s.duracion << ',' << s.genero << ',' << s.calificacionPromedio << acum;
+
+    return out;
+}

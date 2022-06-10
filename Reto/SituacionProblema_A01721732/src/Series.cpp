@@ -65,19 +65,19 @@ void Series::leerArchivo()
     while (getline(lectura, linea)) // lee una línea del archivo, corresponde a una serie
     {
         // Se manda desplegar para verificar que se está leyendo correctamente el archivo
-        cout << linea << endl; // SÓLO DESCOMENTAR PARA DEBUGGING
+        //cout << linea << endl; // SÓLO DESCOMENTAR PARA DEBUGGING
         std::stringstream registro(linea);
         iRow = 0;
         // ciclo para separar los elementos de la serie (string)
         while (getline(registro, dato, ',')) // separamos los elementos de la serie leída
         {
-            cout << dato << endl; // POSIBLEMENTE SE VA A BORRAR(???)
+            //cout << dato << endl; // POSIBLEMENTE SE VA A BORRAR(???)
             row[iRow++] = dato;
         }
         // crear un objeto de la clase Serie, new retorna un pointer
         arrPtrSeries[cantidad] = new Serie(row[0], row[1], stoi(row[2]), row[3], stod(row[4]), 0);
         // para verificar si se inicializó correctamente el objeto
-        arrPtrSeries[cantidad]->str(); // SÓLO DESCOMENTAR PARA DEBUGGING
+        //arrPtrSeries[cantidad]->str(); // SÓLO DESCOMENTAR PARA DEBUGGING
         // vamos por la siguiente serie del archivo, se incrementa para la siguiente
         cantidad++;
     }
@@ -89,7 +89,7 @@ void Series::leerArchivo()
     while (getline(lectura, linea))
     {
         // Desplegar el episodio leído - sólo para corroborar
-        cout << linea << endl; // SÓLO DESCOMENTAR PARA DEBUGGING
+        //cout << linea << endl; // SÓLO DESCOMENTAR PARA DEBUGGING
         std::stringstream registro(linea);
 
         iRow = 0;
@@ -110,18 +110,27 @@ void Series::leerArchivo()
             arrPtrSeries[iS]->setEpisodio(cantEpisodios, *(episodio));
             arrPtrSeries[iS]->setCantidad(++cantEpisodios);
         }
-        cout << arrPtrSeries[iS]->str() << endl; // SÓLO DESCOMENTAR PARA DEBUGGING
+        //cout << arrPtrSeries[iS]->str() << endl; // SÓLO DESCOMENTAR PARA DEBUGGING
     }
     lectura.close();
 
     // Desplegar todas las series con sus episodios
     // manda llamar al método str() de la clase Serie
+    /*
     for (int iS = 0; iS < cantidad; iS++)
     {
         cout << arrPtrSeries[iS]->str() << endl;
     }
+    */
 }
-void Series::reporteTodasLasSeries(){}
+void Series::reporteTodasLasSeries()
+{
+    for(int iR = 0; iR < cantidad; iR++)
+    {
+        //usando la sobrecarga del operador <<
+        cout << iR << '-' << *arrPtrSeries[iR] << endl;
+    }
+}
 void Series::reporteConCalificacion(double _calificacion){}
 void Series::reporteGenero(string _genero){}
 void Series::calcularCalificacionSeries(){}

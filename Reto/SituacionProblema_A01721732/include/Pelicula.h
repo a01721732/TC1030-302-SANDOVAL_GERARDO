@@ -19,6 +19,7 @@ class Pelicula : public Video
 
         //otros métodos
         string str();
+        friend ostream &operator<<(ostream &out, const Pelicula &p);
 
     private:
         int oscares;

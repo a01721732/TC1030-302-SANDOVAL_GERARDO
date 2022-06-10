@@ -163,7 +163,8 @@ void Peliculas::reporteGenero(string _genero)
     {
         if (arrPtrPeliculas[indexRepGen]->getGenero() == _genero)
         {
-            cout << arrPtrPeliculas[indexRepGen]->str() << endl;
+            //cout << arrPtrPeliculas[indexRepGen]->str() << endl; //como ahora está sobrecargado el operador "<<", no se tiene que hacer esto.
+            cout << *arrPtrPeliculas[indexRepGen];
             countGen++;
         }
     }

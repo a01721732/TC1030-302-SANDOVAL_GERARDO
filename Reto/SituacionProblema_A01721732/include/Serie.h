@@ -23,6 +23,7 @@ class Serie : public Video
         //otros métodos
         double calculaCalPromedio();
         string str();
+        friend ostream &operator<<(ostream &out, const Serie &s);
 
     private:
         Episodio episodios[5];
