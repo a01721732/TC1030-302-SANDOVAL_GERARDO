@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1654793073 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\main.cpp
+1654793821 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\main.cpp
 	<iostream>
 	"Video.h"
 	"Episodio.h"
@@ -44,7 +44,7 @@
 1654634345 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\series.h
 	"Serie.h"
 
-1654793753 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\series.cpp
+1655142054 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\series.cpp
 	"Series.h"
 	<fstream>
 	<sstream>

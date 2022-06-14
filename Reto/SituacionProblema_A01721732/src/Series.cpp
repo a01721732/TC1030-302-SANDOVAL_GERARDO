@@ -123,6 +123,7 @@ void Series::leerArchivo()
     }
     */
 }
+
 void Series::reporteTodasLasSeries()
 {
     for(int iR = 0; iR < cantidad; iR++)
@@ -131,6 +132,47 @@ void Series::reporteTodasLasSeries()
         cout << iR << '-' << *arrPtrSeries[iR] << endl;
     }
 }
-void Series::reporteConCalificacion(double _calificacion){}
-void Series::reporteGenero(string _genero){}
-void Series::calcularCalificacionSeries(){}
+
+void Series::reporteConCalificacion(double _calificacion)
+{
+    int countCal = 0;
+
+    for (int indexRepCal = 0; indexRepCal < cantidad; indexRepCal++)
+    {
+        if (arrPtrSeries[indexRepCal]->calculaCalPromedio() == _calificacion)
+        {
+            cout << arrPtrSeries[indexRepCal]->str() << endl;
+            countCal++;
+        }
+    }
+}
+
+void Series::reporteGenero(string _genero)
+{
+    int countGen = 0;
+
+    for (int indexRepGen = 0; indexRepGen < cantidad; indexRepGen++)
+    {
+        if (arrPtrSeries[indexRepGen]->getGenero() == _genero)
+        {
+            //cout << arrPtrSeries[indexRepGen]->str() << endl; //como ahora está sobrecargado el operador "<<", no se tiene que hacer esto.
+            cout << *arrPtrSeries[indexRepGen];
+            countGen++;
+        }
+    }
+
+    if (countGen == 0)
+    {
+        cout << "No hay series de ese género." << endl;
+    }
+}
+
+void Series::calcularCalificacionSeries()
+{
+    int countRecal = 0;
+
+    for (int indexRecal = 0; indexRecal < cantidad; indexRecal++)
+    {
+        arrPtrSeries[indexRecal]->setCalificacionPromedio(arrPtrSeries[indexRecal]->calculaCalPromedio());
+    }
+}
