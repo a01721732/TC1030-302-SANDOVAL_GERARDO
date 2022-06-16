@@ -133,7 +133,10 @@ void Peliculas::reporteTodasLasPeliculas()
         sumaProm = sumaProm + arrPtrPeliculas[indice]->getCalificacionPromedio();
     }
 
-    cout << "Promedio: " + to_string(sumaProm / cantidad) << endl;
+    if (sumaProm / cantidad > 0)
+    {
+        cout << "Promedio: " + to_string(sumaProm / cantidad) << endl;
+    }
 }
 
 void Peliculas::reporteConCalificacion(double _calificacion)

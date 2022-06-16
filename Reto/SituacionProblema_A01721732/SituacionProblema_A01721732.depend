@@ -11,7 +11,7 @@
 1653930832 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\video.h
 	<iostream>
 
-1654793530 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\episodio.h
+1655348322 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\episodio.h
 	<iostream>
 
 1654793551 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\episodio.cpp
@@ -36,7 +36,7 @@
 1654465369 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\peliculas.h
 	"Pelicula.h"
 
-1654792554 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\peliculas.cpp
+1655347574 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\peliculas.cpp
 	"Peliculas.h"
 	<fstream>
 	<sstream>
@@ -44,7 +44,7 @@
 1654634345 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\series.h
 	"Serie.h"
 
-1655142054 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\series.cpp
+1655346814 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\series.cpp
 	"Series.h"
 	<fstream>
 	<sstream>

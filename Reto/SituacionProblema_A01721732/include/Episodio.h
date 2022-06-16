@@ -10,17 +10,17 @@ class Episodio
     public:
         //constructores
         Episodio();
-        Episodio(string _titulo, int _temporada, int _calificacion);
+        Episodio(string _titulo, int _temporada, double _calificacion);
 
         //setters (métodos de modificación)
         void setTitulo(string _titulo);
         void setTemporada(int _temporada);
-        void setCalificacion(int _calificacion);
+        void setCalificacion(double _calificacion);
 
         //getters (métodos de acceso)
         string getTitulo();
         int getTemporada();
-        int getCalificacion();
+        double getCalificacion();
 
         //otros métodos
         string str() const;
@@ -28,7 +28,7 @@ class Episodio
     private:
         string titulo;
         int temporada;
-        int calificacion;
+        double calificacion;
 };
 
 #endif // EPISODIO_H
