@@ -1,42 +1,51 @@
 # depslib dependency file v1.0
-1654391405 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\main.cpp
+1654793821 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\main.cpp
 	<iostream>
 	"Video.h"
 	"Episodio.h"
 	"Pelicula.h"
 	"Serie.h"
 	"Peliculas.h"
+	"Series.h"
 
 1653930832 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\video.h
 	<iostream>
 
-1653799912 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\episodio.h
+1655348322 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\episodio.h
 	<iostream>
 
-1653799912 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\episodio.cpp
+1654793551 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\episodio.cpp
 	"Episodio.h"
 
-1653799912 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\pelicula.h
+1654791877 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\pelicula.h
 	<Video.h>
 
-1653800171 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\serie.h
+1654793495 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\serie.h
 	<Video.h>
 	<Episodio.h>
 
-1653800206 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\serie.cpp
+1654793695 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\serie.cpp
 	"Serie.h"
 
 1653799912 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\video.cpp
 	"Video.h"
 
-1653799912 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\pelicula.cpp
+1654792237 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\pelicula.cpp
 	"Pelicula.h"
 
-1654048017 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\peliculas.h
+1654465369 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\peliculas.h
 	"Pelicula.h"
 
-1654392321 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\peliculas.cpp
+1655347574 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\peliculas.cpp
 	"Peliculas.h"
+	<fstream>
+	<sstream>
+
+1654634345 c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\include\series.h
+	"Serie.h"
+
+1655346814 source:c:\users\jerry\documents\github\tc1030-302-sandoval_gerardo\reto\situacionproblema_a01721732\src\series.cpp
+	"Series.h"
 	<fstream>
 	<sstream>
 

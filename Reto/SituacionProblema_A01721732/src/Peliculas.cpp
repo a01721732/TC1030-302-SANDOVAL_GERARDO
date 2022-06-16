@@ -133,7 +133,10 @@ void Peliculas::reporteTodasLasPeliculas()
         sumaProm = sumaProm + arrPtrPeliculas[indice]->getCalificacionPromedio();
     }
 
-    cout << "Promedio: " + to_string(sumaProm / cantidad) << endl;
+    if (sumaProm / cantidad > 0)
+    {
+        cout << "Promedio: " + to_string(sumaProm / cantidad) << endl;
+    }
 }
 
 void Peliculas::reporteConCalificacion(double _calificacion)
@@ -163,7 +166,8 @@ void Peliculas::reporteGenero(string _genero)
     {
         if (arrPtrPeliculas[indexRepGen]->getGenero() == _genero)
         {
-            cout << arrPtrPeliculas[indexRepGen]->str() << endl;
+            //cout << arrPtrPeliculas[indexRepGen]->str() << endl; //como ahora está sobrecargado el operador "<<", no se tiene que hacer esto.
+            cout << *arrPtrPeliculas[indexRepGen];
             countGen++;
         }
     }

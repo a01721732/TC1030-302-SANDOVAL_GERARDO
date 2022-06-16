@@ -5,7 +5,7 @@ Serie::Serie()
 {
     cantidad = 0;
 }
-Serie::Serie(string _iD, string _titulo, int _duracion, string _genero, double _calificacionPromedio):Video(_iD, _titulo, _duracion, _genero, _calificacionPromedio)
+Serie::Serie(string _iD, string _titulo, int _duracion, string _genero, double _calificacionPromedio, int cantidad):Video(_iD, _titulo, _duracion, _genero, _calificacionPromedio)
 {
     cantidad = 0;
 }
@@ -70,4 +70,17 @@ string Serie::str()
     }
 
     return iD + ", " + titulo + ", " + to_string(duracion) + ", " + genero + ", " + to_string(calificacionPromedio) + "\n" + acum;
+}
+
+ostream &operator<<(ostream &out, const Serie &s)
+{
+    string acum = "\n";
+    for(int index = 0; index < s.cantidad; index++)
+    {
+        acum = acum + to_string(index) + '-' + s.episodios[index].str() + '\n';
+    }
+
+    out << s.iD << ',' << s.titulo << ',' << s.duracion << ',' << s.genero << ',' << s.calificacionPromedio << acum;
+
+    return out;
 }
